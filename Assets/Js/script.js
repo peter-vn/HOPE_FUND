@@ -54,12 +54,12 @@ function toggleMenu() {
     const navMenu = document.querySelector('.nav-menu');
     navMenu.classList.toggle('active');
 }
-// Auto slide every 5 seconds (5000ms)
-setInterval(() => {
-    const maxScroll = track.scrollWidth - document.querySelector('.carousel-window').offsetWidth;
-    currentPosition += imageWrapperWidth * 3;
-    if (currentPosition > maxScroll) {
-        currentPosition = 0; // quay lại đầu
-    }
-    track.style.transform = `translateX(-${currentPosition}px)`;
-}, 3000); // Thay 5000 bằng thời gian bạn muốn (đơn vị ms, ví dụ: 3000 = 3 giây)
+// // Auto slide every 5 seconds (5000ms)
+// setInterval(() => {
+//     const maxScroll = track.scrollWidth - document.querySelector('.carousel-window').offsetWidth;
+//     currentPosition += imageWrapperWidth * 3;
+//     if (currentPosition > maxScroll) {
+//         currentPosition = 0; // quay lại đầu
+//     }
+//     track.style.transform = `translateX(-${currentPosition}px)`;
+// }, 3000); // Thay 5000 bằng thời gian bạn muốn (đơn vị ms, ví dụ: 3000 = 3 giây)
